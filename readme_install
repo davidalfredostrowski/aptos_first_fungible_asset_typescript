@@ -19,5 +19,40 @@ curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
 
 #/home/ubuntu/.local/bin/aptos
 
-cd ~/aptos-core/ecosystem/typescript/sdk
+cd ~/aptos-core/ecosystem/typescript/sdk/examples/typescript
 pnpm install
+
+
+pnpm your_fungible_asset ~/aptos-core/aptos-move/move-examples/fungible_asset/fa_coin
+
+
+
+
+ubuntu@ip-172-31-36-63:~/aptos-core/ecosystem/typescript/sdk/examples/typescript$ pnpm your_fungible_asset ~/aptos-core/aptos-move/move-examples/fungible_asset/fa_coin
+
+> ts-test@1.0.0 your_fungible_asset /home/ubuntu/aptos-core/ecosystem/typescript/sdk/examples/typescript
+> ts-node your_fungible_asset.ts "/home/ubuntu/aptos-core/aptos-move/move-examples/fungible_asset/fa_coin"
+
+
+=== Addresses ===
+Alice: 0x0cd38741e80d794772fc5890e39f2b9d2d3f28246489960b790d7b4d270ab6b5
+Bob: 0xa5f1bf7e7826f356518ef77eecf31ba10e01d0a2d8fc587b1999774aab30e09b
+Charlie: 0x377032ee04f262f06ba14514a1449ef62fbbda6231b463120b08b47551c8ce98
+Update the module with Alice's address, compile, and press enter.
+
+
+ubuntu@ip-172-31-36-63:~/aptos-core/ecosystem/typescript/sdk/examples/typescript$ pnpm your_fungible_asset ~/aptos-core/aptos-move/move-examples/fungible_asset/fa_coin
+
+> ts-test@1.0.0 your_fungible_asset /home/ubuntu/aptos-core/ecosystem/typescript/sdk/examples/typescript
+> ts-node your_fungible_asset.ts "/hom
+
+# now start a new terminal 
+
+cd ~/aptos-core/aptos-move/move-examples/fungible_asset/fa_coin
+
+aptos move compile --named-addresses FACoin= --save-metadata
+
+
+
+
+
