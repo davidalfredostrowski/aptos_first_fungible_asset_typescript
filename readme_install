@@ -52,6 +52,19 @@ cd ~/aptos-core/aptos-move/move-examples/fungible_asset/fa_coin
 
 aptos move compile --named-addresses FACoin=0x0cd38741e80d794772fc5890e39f2b9d2d3f28246489960b790d7b4d270ab6b5 --save-metadata
 
+ubuntu@ip-172-31-36-63:~/aptos-core/aptos-move/move-examples/fungible_asset/fa_coin$ aptos move compile --named-addresses FACoin=0x0cd38741e80d794772fc5890e39f2b9d2d3f28246489960b790d7b4d270ab6b5 --save-metadata
+Compiling, may take a little while to download git dependencies...
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING Examples
+{
+  "Result": [
+    "0cd38741e80d794772fc5890e39f2b9d2d3f28246489960b790d7b4d270ab6b5::fa_coin"
+  ]
+}
+
+
 
 
 
