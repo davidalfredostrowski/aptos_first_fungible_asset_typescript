@@ -66,6 +66,30 @@ BUILDING Examples
 
 
 
+# now go back to the first terminal and hit <enter>
+
+Publishing FACoin package.
+
+All the balances in this exmaple refer to balance in primary fungible stores of each account.
+Alice's initial FACoin balance: 0.
+Bob's initial FACoin balance: 0.
+Charlie's initial balance: 0.
+Alice mints Charlie 100 coins.
+Charlie's updated FACoin primary fungible store balance: 100.
+Alice freezes Bob's account.
+Alice as the admin forcefully transfers the newly minted coins of Charlie to Bob ignoring that Bob's account is frozen.
+Bob's updated FACoin balance: 100.
+Alice unfreezes Bob's account.
+Alice burns 50 coins from Bob.
+Bob's updated FACoin balance: 50.
+Bob transfers 10 coins to Alice as the owner.
+Alice's updated FACoin balance: 10.
+Bob's updated FACoin balance: 40.
+done.
+undefined
+ubuntu@ip-172-31-36-63:~/aptos-core/ecosystem/typescript/sdk/examples/typescript$
+
+
 
 
 
